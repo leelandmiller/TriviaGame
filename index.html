@@ -7,9 +7,9 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" href="assets/css/cyborg.min.css">
-    
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -17,24 +17,85 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <span class="navbar-brand">Trivia Game</span>
+                <span class="navbar-brand">Popular Movies Trivia Game</span>
             </div>
         </div>
     </nav>
     <div class="container">
         <div class="row">
-            <div class="col-md-12 question">
-                
+            <div id="time-clock" class="col-md-6">
+                <h4 class="time-remaining-h3">
+                    Time Remaining
+                </h4>
+                <h5>
+                    <span id="time-remaining">5</span>
+                    Seconds
+                </h5>
             </div>
-            <div class="col-md-12 answers">
-                
+            <div id="right-wrong-container" class="col-md-6">
+                <h2 id="right-or-wrong" class="text-center">
+                </h2>
+            </div>
+        </div>
+        <div id="question-area" class="row">
+            <div class="col-md-8">
+                <h3 class="question-num-h3">
+                    Question <span id="question-num">1</span>
+                </h3>
+            </div>
+            <div id="question" class="col-md-8">
+
+            </div>
+            <div id="answers-title" class="col-md-8">
+                <h3 class="answer-h2">
+                    Choose An Answer
+                </h3>
+            </div>
+            <div id="answers" class="col-md-8">
+                <form id="answers-form">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="answer" id="radio-1" value="" class="input-radio">
+                            <span class="answer-span" id="answer-1"></span>
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="answer" id="radio-2" value="" class="input-radio">
+                            <span class="answer-span" id="answer-2"></span>
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="answer" id="radio-3" value="" class="input-radio">
+                            <span class="answer-span" id="answer-3"></span>
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="answer" id="radio-4" value="" class="input-radio">
+                            <span class="answer-span" id="answer-4"></span>
+                        </label>
+                    </div>
+                    <button id="answer-btn" type="submit" class="btn btn-default">
+                        Submit
+                    </button>
+                </form>
             </div>
         </div>
         <div class="row">
             <div id="start-button-div" class="col-md-12 text-center">
-                <button id="start-button" class="btn btn-info">
+                <button id="start-btn" class="btn btn-info">
                     Start Game
                 </button>
+            </div>
+        </div>
+        <div class="row">
+            <div id="results" class="col-md-12">
+                <h2 class="text-center">Score</h2>
+                <h3>Correct: <span id="correct-results"></span></h3>
+                <h3>Wrong: <span id="wrong-results"></span></h3>
+                <h3>Score: <span id="score"></span></h3>
             </div>
         </div>
     </div>
