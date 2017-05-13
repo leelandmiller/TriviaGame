@@ -1,0 +1,29 @@
+#question-area {
+    display: none;
+}
+/*
+
+.question-num-h3 {
+    display: none;
+}
+
+.answer-h2 {
+    display: none;
+}
+
+#answers {
+    display: none;
+}
+*/
+
+#time-clock {
+    display: none;
+}
+
+#right-wrong-container {
+    height: 49px;
+}
+
+#results {
+    display: none;
+}
